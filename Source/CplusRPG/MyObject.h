@@ -9,7 +9,7 @@
 /**
  * 
  */
-UCLASS()
+UCLASS(Blueprintable)
 class CPLUSRPG_API UMyObject : public UObject
 {
 	GENERATED_BODY()
@@ -17,7 +17,9 @@ class CPLUSRPG_API UMyObject : public UObject
 public:
 	UMyObject();
 
+	UPROPERTY(BlueprintReadWrite)
 	float my_float_;
 
+	UFUNCTION(BlueprintCallable)
 	void MyFunction();
 };
