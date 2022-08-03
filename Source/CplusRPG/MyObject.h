@@ -17,9 +17,9 @@ class CPLUSRPG_API UMyObject : public UObject
 public:
 	UMyObject();
 
-	UPROPERTY(BlueprintReadWrite)
+	UPROPERTY(BlueprintReadWrite,Category = "MyVaribles")
 	float my_float_;
 
-	UFUNCTION(BlueprintCallable)
+	UFUNCTION(BlueprintCallable,Category = "MyFunctions")
 	void MyFunction();
 };
